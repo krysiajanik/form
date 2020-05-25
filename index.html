@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health form</title>
-    
+
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="normalize.css" rel="stylesheet" type="text/css">
 
@@ -19,16 +19,123 @@
             </h1>
         </header>
         <form class="form">
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    Which of these are you most likely to have for breakfest?
+                </legend>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="100">
+                <label class="form__label" for="breakfast">Omlette with fresh vegetables</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="50">
+                <label class="form__label" for="breakfast">Pancakes with bacon</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="90">
+                <label class="form__label" for="breakfast">Wholemeal bread sandwich</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="100">
+                <label class="form__label" for="breakfast">Oatmeal</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="30">
+                <label class="form__label" for="breakfast">Cereal with milk</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="20">
+                <label class="form__label" for="breakfast">I usually skip breakfast</label>
+                </p>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    How long before going to sleep do you eat your last meal?
+                </legend>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="80">
+                <label class="form__label" for="breakfast">6 hours or more</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="100">
+                <label class="form__label" for="breakfast">4 to 6 hours</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="60">
+                <label class="form__label" for="breakfast">2 to 4 hours</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="20">
+                <label class="form__label" for="breakfast">less than 2 hours</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="0">
+                <label class="form__label" for="breakfast">I usually snack right before going to bed</label>
+                </p>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    How varied would you say your meals are?
+                </legend>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="100">
+                <label class="form__label" for="breakfast">Very - I switch it up often</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="80">
+                <label class="form__label" for="breakfast">Reasonably - I have a couple of dishes I like going back
+                    to</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="40">
+                <label class="form__label" for="breakfast">Not so much - Most of my meals consist of the same
+                    things</label>
+                </p>
+                <p class="form__field--radio"></p>
+                <input class="form__input--radio" type="radio" name="breakfast" id="breakfast" value="10">
+                <label class="form__label" for="breakfast">Not at all - I eat the same stuff over and over</label>
+                </p>
+
+            </fieldset>
+
+            <p class="form__field">
+                <legend class="form__legend">
+                    How often do you eat fruits and vegetables?
+                </legend>
+                <span class="form__label--range">
+                    <label class="form__label" for="frutFrequency">Almost never</label>
+                    <label class="form__label" for="frutFrequency">Everyday</label>
+                </span>
+                <input class="form__input" type="range" min="0" max="100" step="20" name="frutFrequency"
+                    id="frutFrequency">
+            </p>
+
+
+
             <p class="form__field">
                 <label class="form__label" for="firstName">Your name:</label>
-                <input class="form__input" name="firstName" id="firstName"> 
+                <input class="form__input" name="firstName" id="firstName">
             </p>
+            <p class="form__field">
+                <label class="form__label" for="gender">Please select your gender:</label>
+                <select class="form__select" name="gender" id="gender">
+                    <option>female</option>
+                    <option>male</option>
+                    <option>other</option>
+                </select>
+
+
+            </p>
+
 
         </form>
 
 
     </main>
-    
+
     <script src="main.js"></script>
 </body>
 
