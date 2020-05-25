@@ -18,7 +18,7 @@
                 Are your eating habits healthy?
             </h1>
         </header>
-        <form class="form">
+        <form class="form" action="https://dev.cotenfrontend.pl" method="POST">
 
             <fieldset class="form__fieldset">
                 <legend class="form__legend">
@@ -106,11 +106,11 @@
                     How often do you eat fruits and vegetables?
                 </legend>
                 <span class="form__label--range">
-                    <label class="form__label" for="frutFrequency">Almost never</label>
-                    <label class="form__label" for="frutFrequency">Everyday</label>
+                    <label class="form__label" for="fruitFrequency">Almost never</label>
+                    <label class="form__label" for="fruitFrequency">Everyday</label>
                 </span>
-                <input class="form__input" type="range" min="0" max="100" step="20" name="frutFrequency"
-                    id="frutFrequency">
+                <input class="form__input--range" type="range" min="0" max="100" step="20" name="fruitFrequency"
+                    id="fruitFrequency">
             </p>
 
 
@@ -126,10 +126,17 @@
                     <option>male</option>
                     <option>other</option>
                 </select>
-
-
             </p>
 
+            <p class="form__field--checkbox">
+                <input class="form__input--checkbox" type="checkbox" name="userAgreement" id="userAgreement">
+                <label class="form__label" for="userAgreement">I agree to everything</label>
+                
+            </p>
+
+            <p class="form__field--submit">
+                <input type="submit" class="form__submit" value="Submit">
+            </p>
 
         </form>
 

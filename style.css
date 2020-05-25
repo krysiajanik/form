@@ -9,7 +9,7 @@
 }
 
 .form{
-    width: 40%;
+    width: 60%;
     min-width: 300px;
 }
 
@@ -22,13 +22,38 @@
     padding: 0;
 }
 
+.form__field--checkbox{
+    margin: 64px 0;
+}
+
+.form__field--submit {
+    text-align: center;
+    
+}
+.form__submit {
+    background-color: #4a3a45;
+    color: #f3f0f3;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+
 .form__input {
     border: 1px solid #4a3a45;
     border-radius: 4px;
     display: block;
     font-weight: 200;
     padding: 4px;
-    width: 100%;
+    width: 90%;
+    margin: 0 16px;
+}
+
+.form__input--radio {
+    margin-left: 16px;
+}
+
+.form__input--range {
+    margin: 0 16px;
+    width: 90%;
 }
 
 .form__label {
@@ -45,6 +70,7 @@
 .form__legend {
     margin: 0;
     padding: 0;
+    width: 100%;
     border-bottom: 1px solid #4a3a45;
     font-weight: 200;
 }
