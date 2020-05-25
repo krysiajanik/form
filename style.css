@@ -1,0 +1,50 @@
+.body {
+    background: #f3f0f3;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 16px;
+}
+
+.form{
+    width: 40%;
+    min-width: 120px;
+}
+
+.form__field{
+    
+}
+
+.form__input {
+    border: 1px solid #4a3a45;
+    border-radius: 4px;
+    display: block;
+    font-weight: 200;
+    padding: 4px;
+    width: 100%;
+}
+
+.form__label {
+    font-weight: 200;
+    color: #4a3a45;
+}
+    
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    min-width: 200px;
+    margin: 32px auto;
+}
+
+.title{
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #4a3a45;
+}
+
+
